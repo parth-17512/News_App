@@ -86,7 +86,7 @@ class NewsService {
       // Handle JSON parsing errors
       throw Exception('Invalid data format received from server.');
     } on http.ClientException {
-      // Handle HTTP client errors (like the one you're experiencing)
+      // Handle HTTP client errors
       throw Exception(
         'Network error: Unable to connect to the news service. Please try again later.',
       );
